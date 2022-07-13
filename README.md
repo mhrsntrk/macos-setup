@@ -45,6 +45,7 @@
 
 #### Get essentials using Homebrew
 - `brew install node`
+- `brew install yarn`
 - `brew install go`
 - `brew install tree`
 - `brew install --cask iterm2`
