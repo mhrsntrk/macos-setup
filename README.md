@@ -67,10 +67,10 @@
 - Run `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
 ## Step 3: iTerm2 Setup
-- Install the (fonts)[https://github.com/mhrsntrk/macos-dev-setup/tree/main/iTerm2/Fonts] in this repo
+- Install the [fonts](https://github.com/mhrsntrk/macos-dev-setup/tree/main/iTerm2/Fonts) in this repo
 - Open "iTerm2" 
 - `Preferences` > `Profiles` > `...Other Actions` > `Import JSON Profiles`
-- Select the (JSON file)[https://github.com/mhrsntrk/macos-dev-setup/blob/main/iTerm2/mhrsntrk.json] in this repo
+- Select the [JSON file](https://github.com/mhrsntrk/macos-dev-setup/blob/main/iTerm2/mhrsntrk.json) in this repo
 - Select imported profile and navigate to `Text` sub-menu
 - Select `mononoki Nerd Font` - `Regular` for primary font
 - Select `Overpass Nerd Font Mono` - `Bold` for Non-ASCII font
