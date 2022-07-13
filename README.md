@@ -20,7 +20,7 @@
 #### Set the new finder window show
 - `Finder` > `Preferences` > `General` > `(Select) user folder from dropdown`
 
-#### Disable auto correct spelling
+#### Disable autocorrect spelling
 - `System Preferences` > `Keyboard` > `Text` > `(Uncheck) Disable “Correct spelling automatically”`
 
 #### Enable fast keystrokes and key repeats
@@ -41,7 +41,7 @@
 #### Install Homebrew
 - Open "Terminal" 
 - Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Run `brew update; brew upgrade; brew cleanup; brew doctor` to make sure it is up to date and healthy
+- Run `brew update; brew upgrade; brew cleanup; brew doctor` to make sure it is up-to-date and healthy
 
 #### Get essentials using Homebrew
 - `brew install node`
@@ -63,7 +63,7 @@
 - `git config --global user.email "<email>"`
 - `git config --global color.ui auto`
 
-#### Generate a SSH Key
+#### Generate an SSH Key
 - Run `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
 ## Step 3: iTerm2 Setup
@@ -107,3 +107,4 @@ alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
 
 - Install zsh-autosuggestions by using `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 - Install spaceship theme by using `npm install -g spaceship-zsh-theme`
+
