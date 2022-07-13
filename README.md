@@ -52,6 +52,7 @@
 - `brew install --cask docker`
 - `brew install --cask raycast`
 - `brew install --cask cron`
+- `brew install --cask fig`
 - `brew install --cask brave-browser`
 - `brew install --cask notion`
 - `brew install --cask slack`
