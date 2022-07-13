@@ -63,14 +63,47 @@
 - `git config --global user.email "<email>"`
 - `git config --global color.ui auto`
 
-#### Install Oh-My-Zsh
-- Run `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-
 #### Generate a SSH Key
 - Run `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
 ## Step 3: iTerm2 Setup
-
+- Install the (fonts)[https://github.com/mhrsntrk/macos-dev-setup/tree/main/iTerm2/Fonts] in this repo
+- Open "iTerm2" 
+- `Preferences` > `Profiles` > `...Other Actions` > `Import JSON Profiles`
+- Select the (JSON file)[https://github.com/mhrsntrk/macos-dev-setup/blob/main/iTerm2/mhrsntrk.json] in this repo
+- Select imported profile and navigate to `Text` sub-menu
+- Select `mononoki Nerd Font` - `Regular` for primary font
+- Select `Overpass Nerd Font Mono` - `Bold` for Non-ASCII font
 
 ## Step 4: Oh-My-Zsh Setup
+- Run `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` to install Oh-My-Zsh
+- Replace the `.zshrc` file with below;
 
+```bash
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="spaceship"
+
+plugins=(zsh-autosuggestions transfer per-directory-history sudo z)
+
+source $ZSH/oh-my-zsh.sh
+
+SPACESHIP_PROMPT_ADD_NEWLINE="true"
+SPACESHIP_CHAR_SYMBOL="\uf0e7"
+SPACESHIP_CHAR_SUFFIX=("  ")
+SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
+SPACESHIP_PROMPT_DEFAULT_PREFIX="$USER"
+SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
+SPACESHIP_USER_SHOW="true"
+SPACESHIP_TIME_SHOW="true"
+
+alias zshconfig="code ~/.zshrc"
+alias zshreload='source ~/.zshrc'
+alias myip='curl http://ipecho.net/plain; echo'
+alias dev="cd ~/developer"
+alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
+alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
+```
+
+- Install zsh-autosuggestions by using `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+- Install spaceship theme by using `npm install -g spaceship-zsh-theme`
