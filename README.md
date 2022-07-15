@@ -44,7 +44,7 @@
 - Run `brew update; brew upgrade; brew cleanup; brew doctor` to make sure it is up-to-date and healthy
 
 #### Get essentials using Homebrew
-- `brew install node`
+- `brew install node@14`
 - `brew install yarn`
 - `brew install go`
 - `brew install tree`
