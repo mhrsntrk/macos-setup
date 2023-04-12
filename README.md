@@ -38,19 +38,21 @@
 
 #### Fix trackpad direction
 
-- `System Preferences` > `Trackpad` > `Scroll & Zoom`
-- Set `Natural Scrolling` to OFF
+- `System Preferences` > `Trackpad` > `Scroll & Zoom` > `Turn Off Natural Scrolling`
 
 #### Turn off the dictionary look up
 
-- `System Preferences` > `Trackpad` > `Point & Click`
-- Set `Look up & data detectors` to OFF
+- `System Preferences` > `Trackpad` > `Point & Click` > `Turn Off Look up & data detectors`
 
 ## Step 2: Developer Environment Setup
 
+#### Install Rosetta 2
+- Open "Terminal"
+- Run `/usr/sbin/softwareupdate --install-rosetta --agree-to-license`
+
 #### Create the "Developer" folder
 
-- Open “Finder” (it should navigate to user folder automatically)
+- Open "Finder" (it should navigate to user folder automatically)
 - Create a new folder named "Developer"
 
 #### Change the computer name
