@@ -222,13 +222,10 @@ code --install-extension Zignd.html-css-class-completion
 #### Others
 
 - [Ledger Live](https://www.ledger.com/ledger-live)
-- [Stream Deck](https://www.elgato.com/en/downloads)
-- [OWC Dock Ejector](https://www.owc.com/solutions/dock-ejector)
-- [Logi Tune](https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html)
 
 ## Step 7: Install Brave Extensions
 
-- [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
+- [Proton Pass](https://chrome.google.com/webstore/detail/proton-pass-free-password/ghmbeldphafepmbegfdlkpapadhbakde)
 - [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
 - [Polkadot.js](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd)
 - [Auro Wallet](https://chrome.google.com/webstore/detail/auro-wallet/cnmamaachppnkjgnildpdmkaakejnhae)
