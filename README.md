@@ -74,7 +74,7 @@
 
 #### Apps to install using Homebrew
 
-- `brew install node@16`
+- `brew install node@18`
 - `brew install yarn`
 - `brew install go`
 - `brew install tree`
