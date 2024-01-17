@@ -13,10 +13,13 @@
 - Open “Finder”
 - Press the Command + Shift + . (period) keys at the same time
 
-#### Show status bar in Finder
+#### Sort folders first in Finder
 
-- Open “Finder”
-- `View` > `Show Path Bar`
+- defaults write com.apple.finder _FXSortFoldersFirst -bool true; killall Finder
+
+#### Show Path in Finder
+
+- defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
 
 #### Show user in Finder sidebar
 
@@ -43,6 +46,10 @@
 #### Turn off the dictionary look up
 
 - `System Preferences` > `Trackpad` > `Point & Click` > `Turn Off Look up & data detectors`
+
+#### Enable Key Repeat
+
+- defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 ## Step 2: Developer Environment Setup
 
