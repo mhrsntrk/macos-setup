@@ -88,6 +88,10 @@
 - `brew install yarn`
 - `brew install go`
 - `brew install tree`
+- `brew install tmux`
+- `brew install cointop`
+- `brew install btop`
+- `brew install bat`
 - `brew install --cask iterm2`
 - `brew install --cask visual-studio-code`
 - `brew install --cask github`
@@ -164,6 +168,10 @@ alias delds="find . -name '.DS_Store' -type f -print -delete"
 
 - Install zsh-autosuggestions by using `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 - Install spaceship theme by using `npm install -g spaceship-zsh-theme`
+
+## Step 5: tmux Configuration
+
+
 
 ## Step 5: Install VS Code Extensions
 
