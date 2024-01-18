@@ -15,11 +15,13 @@
 
 #### Sort folders first in Finder
 
-- `defaults write com.apple.finder _FXSortFoldersFirst -bool true; killall Finder`
+- Open "Terminal"
+- Run `defaults write com.apple.finder _FXSortFoldersFirst -bool true; killall Finder`
 
 #### Show Path in Finder
 
-- `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder`
+- Open "Terminal"
+- Run `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder`
 
 #### Show user in Finder sidebar
 
@@ -49,7 +51,8 @@
 
 #### Enable Key Repeat
 
-- `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false`
+- Open "Terminal"
+- Run `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false`
 
 ## Step 2: Developer Environment Setup
 
