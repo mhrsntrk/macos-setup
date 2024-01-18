@@ -171,9 +171,12 @@ alias delds="find . -name '.DS_Store' -type f -print -delete"
 
 ## Step 5: tmux Configuration
 
+- Copy the [.tmux.conf](https://github.com/mhrsntrk/macos-dev-setup/blob/main/.tmux.conf) file in this repo
+- Run `source-file ~/.tmux.conf` to load
+- On tmux press `[prefix]` + `⇧ Shift` + `i` to install plugins
 
 
-## Step 5: Install VS Code Extensions
+## Step 6: Install VS Code Extensions
 
 > In case the "Settings Sync" doesn't work
 
@@ -209,14 +212,13 @@ code --install-extension zhuangtongfa.material-theme
 code --install-extension Zignd.html-css-class-completion
 ```
 
-## Step 6: Install Essential Apps
+## Step 7: Install Essential Apps
 
 #### Using HomeBrew
 
 - `brew install --cask setapp`
 - `brew install --cask raycast`
 - `brew install --cask cron`
-- `brew install --cask bitwarden`
 - `brew install --cask brave-browser`
 - `brew install --cask slack`
 - `brew install --cask discord`
@@ -241,7 +243,7 @@ code --install-extension Zignd.html-css-class-completion
 
 - [Ledger Live](https://www.ledger.com/ledger-live)
 
-## Step 7: Install Brave Extensions
+## Step 8: Install Brave Extensions
 
 - [Proton Pass](https://chrome.google.com/webstore/detail/proton-pass-free-password/ghmbeldphafepmbegfdlkpapadhbakde)
 - [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
