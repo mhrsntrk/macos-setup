@@ -11,15 +11,15 @@
 #### Show hidden files in Finder
 
 - Open “Finder”
-- Press the Command + Shift + . (period) keys at the same time
+- Press the `Command` + `Shift` + `.` (period) keys at the same time
 
 #### Sort folders first in Finder
 
-- defaults write com.apple.finder _FXSortFoldersFirst -bool true; killall Finder
+- `defaults write com.apple.finder _FXSortFoldersFirst -bool true; killall Finder`
 
 #### Show Path in Finder
 
-- defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
+- `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder`
 
 #### Show user in Finder sidebar
 
@@ -49,7 +49,7 @@
 
 #### Enable Key Repeat
 
-- defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+- `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false`
 
 ## Step 2: Developer Environment Setup
 
