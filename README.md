@@ -120,8 +120,8 @@
 - `Preferences` > `Profiles` > `...Other Actions` > `Import JSON Profiles`
 - Select the [JSON file](https://github.com/mhrsntrk/macos-dev-setup/blob/main/iTerm2/mhrsntrk.json) in this repo
 - Select imported profile and navigate to `Text` sub-menu
-- Select `mononoki Nerd Font` - `Regular` for primary font
-- Select `Overpass Nerd Font Mono` - `Bold` for Non-ASCII font
+- Select `MononokiNerdFont` - `Regular` for primary font
+- Select `SymbolsNerdFont` - `Regular` for Non-ASCII font
 
 ## Step 4: Oh-My-Zsh Setup
 
