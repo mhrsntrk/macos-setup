@@ -130,14 +130,18 @@
 
 ```bash
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 
 ZSH_THEME="spaceship"
+EDITOR="nvim"
 
 plugins=(zsh-autosuggestions transfer per-directory-history sudo z)
 
 source $ZSH/oh-my-zsh.sh
 
 export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 killport() {
     PID=$(lsof -ti ":$1")
@@ -160,13 +164,21 @@ SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
 SPACESHIP_USER_SHOW="true"
 SPACESHIP_TIME_SHOW="true"
 
-alias zshconfig="code ~/.zshrc"
+alias c='clear'
+alias e='exit'
+alias gp='git pull'
+alias gf='git fetch'
+alias zshrc="$EDITOR ~/.zshrc"
 alias zshreload='source ~/.zshrc'
 alias myip='curl http://ipecho.net/plain; echo'
 alias dev="cd ~/developer"
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
 alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
-alias delds="find . -name '.DS_Store' -type f -print -delete"
+alias dsdel="find . -name '.DS_Store' -type f -print -delete"
+alias vim="nvim"
+alias cat="bat"
+
+source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 ```
 
 - Install zsh-autosuggestions by using `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
