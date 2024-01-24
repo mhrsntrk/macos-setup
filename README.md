@@ -92,6 +92,9 @@
 - `brew install cointop`
 - `brew install btop`
 - `brew install bat`
+- `brew install nb`
+- `brew install neovim`
+- `brew install midnight-commander`
 - `brew install --cask iterm2`
 - `brew install --cask visual-studio-code`
 - `brew install --cask github`
@@ -175,8 +178,16 @@ alias delds="find . -name '.DS_Store' -type f -print -delete"
 - Run `source-file ~/.tmux.conf` to load
 - On tmux press `[prefix]` + `⇧ Shift` + `i` to install plugins
 
+## Step 6: nvim Configuration
 
-## Step 6: Install VS Code Extensions
+- Run `git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim`
+- Open nvim
+- Type `N` to install example config
+- Press `Space`+`t`+`h` to open theme switcher, and set it to `One Dark`
+- Copy the content of the [custom](https://github.com/mhrsntrk/macos-dev-setup/blob/main/custom) folder in this repo into `$HOME/.config/nvim/lua/custom`
+- Restart nvim
+
+## Step 7: Install VS Code Extensions
 
 > In case the "Settings Sync" doesn't work
 
@@ -212,7 +223,7 @@ code --install-extension zhuangtongfa.material-theme
 code --install-extension Zignd.html-css-class-completion
 ```
 
-## Step 7: Install Essential Apps
+## Step 8: Install Essential Apps
 
 #### Using HomeBrew
 
@@ -239,18 +250,16 @@ code --install-extension Zignd.html-css-class-completion
 - Archiver
 - Squash
 
-#### Others
+#### Other Applications
 
 - [Ledger Live](https://www.ledger.com/ledger-live)
 
-## Step 8: Install Brave Extensions
+## Step 9: Install Brave Extensions
 
 - [Proton Pass](https://chrome.google.com/webstore/detail/proton-pass-free-password/ghmbeldphafepmbegfdlkpapadhbakde)
 - [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
 - [Polkadot.js](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd)
 - [Auro Wallet](https://chrome.google.com/webstore/detail/auro-wallet/cnmamaachppnkjgnildpdmkaakejnhae)
-- [Sporran](https://chrome.google.com/webstore/detail/sporran/djdnajgjcbjhhbdblkegbcgodlkkfhcl)
 - [Grammar & Spell Checker](https://chrome.google.com/webstore/detail/grammar-spell-checker%E2%80%94lan/oldceeleldhonbafppcapldpdifcinji)
 - [Loom](https://chrome.google.com/webstore/detail/loom-%E2%80%93-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb)
-- [Notion Web Clipper](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk)
 - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
