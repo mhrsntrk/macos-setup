@@ -57,6 +57,7 @@
 ## Step 2: Developer Environment Setup
 
 #### Install Rosetta 2
+
 - Open "Terminal"
 - Run `/usr/sbin/softwareupdate --install-rosetta --agree-to-license`
 
@@ -186,6 +187,7 @@ source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 ## Step 5: tmux Configuration
 
+- Run `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Copy the [.tmux.conf](https://github.com/mhrsntrk/macos-dev-setup/blob/main/.tmux.conf) file in this repo
 - Run `source-file ~/.tmux.conf` to load
 - On tmux press `[prefix]` + `⇧ Shift` + `i` to install plugins
