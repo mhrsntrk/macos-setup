@@ -14,8 +14,25 @@ local plugins = {
         "prettierd",
         "tailwindcss-language-server",
         "typescript-language-server",
+        "bash-language-server",
+        "cbfmt",
+        "markdownlint",
       },
     },
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+  {
+    'numToStr/Comment.nvim',
+    opts = {},
+    lazy = false,
   },
   {
     "nvimtools/none-ls.nvim",
@@ -37,9 +54,14 @@ local plugins = {
       local opts = require "plugins.configs.treesitter"
       opts.ensure_installed = {
         "lua",
+        "bash",
         "javascript",
         "typescript",
         "tsx",
+        "markdown",
+        "markdown_inline",
+        "mermaid",
+        "json",
       }
       return opts
     end,
