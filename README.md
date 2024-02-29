@@ -95,6 +95,7 @@
 - `brew install bat`
 - `brew install nb`
 - `brew install neovim`
+- `brew install circumflex`
 - `brew install midnight-commander`
 - `brew install --cask iterm2`
 - `brew install --cask visual-studio-code`
@@ -178,6 +179,7 @@ alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
 alias dsdel="find . -name '.DS_Store' -type f -print -delete"
 alias vim="nvim"
 alias cat="bat"
+alias hn="clx -n"
 
 source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 ```
