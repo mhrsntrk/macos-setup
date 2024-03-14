@@ -100,10 +100,10 @@
 - `brew install midnight-commander`
 - `brew install --cask iterm2`
 - `brew install --cask zed`
+- `brew install --cask monodraw`
 - `brew install --cask github`
 - `brew install --cask docker`
 - `brew install --cask postman`
-- `brew install --cask burp-suite`
 
 #### Configure git
 
@@ -204,40 +204,31 @@ source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 - Copy the content of the [custom](https://github.com/mhrsntrk/macos-dev-setup/blob/main/custom) folder in this repo into `$HOME/.config/nvim/lua/custom`
 - Restart nvim
 
-## Step 7: Install VS Code Extensions
-
-> In case the "Settings Sync" doesn't work
+## Step 7: Configure zed 
 
 ```bash
-code --install-extension alexkrechik.cucumberautocomplete
-code --install-extension anseki.vscode-color
-code --install-extension bradgashler.htmltagwrap
-code --install-extension bradlc.vscode-tailwindcss
-code --install-extension christian-kohler.path-intellisense
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
-code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.auto-close-tag
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension golang.go
-code --install-extension GraphQL.vscode-graphql-syntax
-code --install-extension heybourn.headwind
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-vscode-remote.remote-ssh
-code --install-extension ms-vscode.vscode-typescript-next
-code --install-extension naumovs.color-highlight
-code --install-extension oliversturm.fix-json
-code --install-extension pranaygp.vscode-css-peek
-code --install-extension Rubymaniac.vscode-paste-and-indent
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension Tyriar.lorem-ipsum
-code --install-extension Tyriar.sort-lines
-code --install-extension vincaslt.highlight-matching-tag
-code --install-extension vscode-icons-team.vscode-icons
-code --install-extension zhuangtongfa.material-theme
-code --install-extension Zignd.html-css-class-completion
+{
+  "base_keymap": "VSCode",
+  "theme": "One Dark",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "buffer_font_family": "Berkeley Mono",
+  "cursor_blink": true,
+  "enable_language_server": true,
+  "hour_format": "hour24",
+  "working_directory": {
+    "always": {
+      "directory": "~/Developer"
+    }
+  },
+  "git_status": true
+}
 ```
 
 ## Step 8: Install Essential Apps
