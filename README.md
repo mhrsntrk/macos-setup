@@ -85,8 +85,9 @@
 
 #### Apps to install using Homebrew
 
-- `brew install node@18`
+- `brew install node`
 - `brew install yarn`
+- `brew install typescript`
 - `brew install go`
 - `brew install tree`
 - `brew install tmux`
@@ -98,7 +99,7 @@
 - `brew install circumflex`
 - `brew install midnight-commander`
 - `brew install --cask iterm2`
-- `brew install --cask visual-studio-code`
+- `brew install --cask zed`
 - `brew install --cask github`
 - `brew install --cask docker`
 - `brew install --cask postman`
