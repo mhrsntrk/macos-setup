@@ -86,7 +86,7 @@
 #### Apps to install using Homebrew
 
 ```bash
-brew install node typescript yarn pnpm tmux btop eza fzf gh jq lazygit tree tailscale yazi
+brew install node typescript yarn pnpm tmux btop eza fzf gh jq lazygit tree yazi
 ```
 
 ```bash
