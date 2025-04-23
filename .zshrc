@@ -45,6 +45,10 @@ alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
 alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
 alias dsdel="find . -name '.DS_Store' -type f -print -delete"
 alias vim="nvim"
-alias cat="bat"
+alias hn="clx -n"
+alias ls='eza --all --long --group-directories-first --icons --header --time-style long-iso --git --hyperlink --color-scale=size --octal-permissions --binary --no-permissions'
+alias lt='eza --tree --level=2 --long'
+
+eval "$(fzf --zsh)"
 
 source "/$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
