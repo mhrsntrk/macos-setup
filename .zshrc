@@ -1,5 +1,4 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 
 ZSH_THEME="spaceship"
 EDITOR="nvim"
@@ -13,15 +12,42 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 killport() {
-    PID=$(lsof -ti ":$1")
-    if [ ! -z "$PID" ]; then
-        echo "PORT: $1"
-        echo "PID:  $PID"
-        kill -9 $PID
-        echo "OK!"
-    else
-        echo "No Process Found running Port $1"
+    if [ -z "$1" ]; then
+        echo "Usage: killport <port>"
+        return 1
     fi
+    local port="$1"
+    local pids
+    pids=$(lsof -ti :"$port")
+    if [ -z "$pids" ]; then
+        echo "No process found running port $port"
+        return 0
+    fi
+    echo "Found PID(s) using port $port: $pids"
+    echo "$pids" | xargs kill
+    sleep 3
+    pids_still=$(lsof -ti :"$port")
+    if [ -z "$pids_still" ]; then
+        echo "Process(es) terminated successfully!"
+        return 0
+    fi
+    echo "Force killing remaining PID(s): $pids_still"
+    echo "$pids_still" | xargs kill -9
+    echo "Done!"
+}
+
+exiftract() {
+  exiftool -Make -Model -LensMake -LensModel \
+    -DateTimeOriginal -ApertureValue -FNumber \
+    -ExposureMode -ExposureProgram -ExposureTime \
+    -ShutterSpeedValue -WhiteBalance -ISO -ISOSpeedRatings "$1" | pbcopy
+    echo "EXIF data successfully copied to clipboard"
+}
+
+tmuxon() {
+  tmux attach -t 01101101 2>/dev/null \
+    && return       # if attach succeeds, stop here
+  tmux new -s 01101101
 }
 
 SPACESHIP_PROMPT_ADD_NEWLINE="true"
@@ -48,7 +74,20 @@ alias vim="nvim"
 alias hn="clx -n"
 alias ls='eza --all --long --group-directories-first --icons --header --time-style long-iso --git --hyperlink --color-scale=size --octal-permissions --binary --no-permissions'
 alias lt='eza --tree --level=2 --long'
+alias opencodeup='brew upgrade opencode && cd ~/.config/opencode && npm update'
 
 eval "$(fzf --zsh)"
 
 source "/$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mhrsntrk/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+export GPG_TTY=$(tty)

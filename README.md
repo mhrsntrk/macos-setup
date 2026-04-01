@@ -150,5 +150,5 @@ window-save-state = always
 - Open nvim
 - Type `N` to install example config
 - Press `Space`+`t`+`h` to open theme switcher, and set it to `One Dark`
-- Copy the content of the [custom](https://github.com/mhrsntrk/macos-dev-setup/blob/main/custom) folder in this repo into `$HOME/.config/nvim/lua/custom`
+- Copy the content of the [lua](https://github.com/mhrsntrk/macos-dev-setup/blob/main/lua) folder in this repo into `$HOME/.config/nvim/lua`
 - Restart nvim
