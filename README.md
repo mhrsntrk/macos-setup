@@ -83,14 +83,24 @@
 - Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Run `brew update; brew upgrade; brew cleanup; brew doctor` to make sure it is up-to-date and healthy
 
-#### Apps to install using Homebrew
+#### Install Homebrew Packages
 
 ```bash
-brew install node typescript yarn pnpm tmux btop eza fzf gh jq lazygit tree yazi
+brew install node typescript yarn pnpm tmux btop eza fzf gh jq lazygit tree yazi bat circumflex cloudflared cocoapods exiftool ffmpeg figlet fx git go hcloud jdtls maven mosh neovim pinentry-mac pipx playwright-cli python@3.11 shellcheck tailscale testssl typescript-language-server vips
 ```
 
+#### Custom Taps
+
 ```bash
-brew install --cask github brave-browser zen-browser ghostty obsidian orbstack postman protonvpn raycast zoom slack setapp visual-studio-code rectangle-pro
+brew install anomalyco/tap/opencode
+brew install mhrsntrk/portflix/portflix
+brew install mhrsntrk/venaqui/venaqui
+```
+
+#### Casks (GUI Applications)
+
+```bash
+brew install --cask balenaetcher bifrost blip brave-browser claude-code cursor discord ghostty github helium-browser lm-studio orbstack postman protonvpn raycast setapp tailscale-app vcmi vlc zed zen zen-browser zoom
 ```
 
 #### Configure git
