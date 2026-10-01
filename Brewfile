@@ -162,7 +162,6 @@ npm "oh-my-opencode-darwin-arm64"
 npm "spaceship-zsh-theme"
 npm "wrangler"
 
-uv "graphifyy"  # provides `graphify`; then run `graphify install --platform claude`
 uv "weasyprint"
 
 go "golang.org/x/tools/gopls"

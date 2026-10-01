@@ -238,7 +238,6 @@ cp claude/settings.json claude/CLAUDE.md claude/RTK.md ~/.claude/
 | cloudflare, wrangler, workers-best-practices, agents-sdk, durable-objects, cloudflare-email-service, turnstile-spin, web-perf, sandbox-stable | cloudflare/skills |
 | find-skills | vercel-labs/skills |
 | affinidi-agent-surfaces | choosemission/agent-gateway-skills |
-| graphify | `graphify install --platform claude` (uv tool `graphifyy`) |
 | frankenstein | private, copy manually |
 
 ## Step 9: App configs

@@ -25,8 +25,5 @@ add cloudflare/skills \
 add vercel-labs/skills --skill find-skills
 add choosemission/agent-gateway-skills --skill affinidi-agent-surfaces
 
-# graphify ships its skill with the CLI (uv tool from the Brewfile)
-graphify install --platform claude
-
 # Private skill, not public: copy manually from a backup or the frankenstein repo
 # ~/.claude/skills/frankenstein/SKILL.md  (needs the `frankenstein` binary in ~/.local/bin)
