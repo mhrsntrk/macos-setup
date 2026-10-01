@@ -11,7 +11,6 @@ ghostty/config           Ghostty config
 nvim/                    LazyVim overrides (colorscheme + extras)
 claude/                  Claude Code settings, global CLAUDE.md, plugin + skill installers
 RectangleProConfig.json  Rectangle Pro
-*.rayconfig              Raycast export
 *.bttpreset              BetterTouchTool preset
 ```
 
@@ -245,5 +244,4 @@ cp claude/settings.json claude/CLAUDE.md claude/RTK.md ~/.claude/
 ## Step 9: App configs
 
 - **Rectangle Pro:** `Settings` > `Import` > `RectangleProConfig.json`
-- **Raycast:** `Settings` > `Advanced` > `Import` > the `.rayconfig` file
 - **BetterTouchTool:** `Presets` > `Import` > `mhrsntrk.bttpreset`

@@ -128,7 +128,6 @@ cask "postman"
 cask "zed"
 
 # Network
-cask "cloudflare-warp"
 cask "protonvpn"
 cask "syncthing-app"  # run the app, NOT `brew services` (no TCC for iCloud folders)
 cask "tailscale-app"
@@ -136,7 +135,6 @@ cask "tailscale-app"
 # Productivity & comms
 cask "abue-ammar/tinycast/tinycast"
 cask "blip"
-cask "raycast"
 cask "setapp"
 cask "slack"
 cask "zoom"
