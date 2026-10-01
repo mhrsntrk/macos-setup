@@ -2,9 +2,8 @@
 # ~/.zshenv - Environment variables for all shell invocations
 # =============================================================================
 
-# PATH - Add user-specific binaries
-# Add your custom paths here (e.g., LM Studio CLI, local bins)
-# export PATH="$PATH:$HOME/.local/bin"
+# PATH - Add LM Studio CLI
+export PATH="$PATH:$HOME/.lmstudio/bin"
 
 # GPG TTY for proper GPG pinentry
 export GPG_TTY=$(tty)

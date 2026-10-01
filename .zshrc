@@ -85,6 +85,25 @@ tmuxon() {
   tmux new -s "$session_name"
 }
 
+tmuxc () {
+  local session="01101101"
+  local window="claude"
+  local dir="${1:-$HOME/Developer}"
+
+  tmux has-session -t "$session" 2>/dev/null ||
+    tmux new-session -d -s "$session" -c "$dir" || return 1
+
+  tmux select-window -t "${session}:${window}" 2>/dev/null ||
+    tmux new-window -n "$window" -t "$session" -c "$dir" \
+      'claude --dangerously-skip-permissions'
+
+  if [ -n "$TMUX" ]; then
+    tmux switch-client -t "$session"
+  else
+    tmux attach -t "$session"
+  fi
+}
+
 # -----------------------------------------------------------------------------
 # ALIASES
 # -----------------------------------------------------------------------------
@@ -126,7 +145,8 @@ alias ls='eza --all --long --group-directories-first --icons --header --time-sty
 alias lt='eza --tree --level=2 --long --icons'
 
 # OpenCode
-alias opencodeup='brew upgrade opencode && cd ~/.config/opencode && npm update'
+alias opencodeup='brew upgrade opencode && cd ~/.config/opencode && npm update && cd ~'
+
 # -----------------------------------------------------------------------------
 # TOOL INTEGRATIONS
 # -----------------------------------------------------------------------------
@@ -155,4 +175,14 @@ SPACESHIP_PROMPT_ASYNC="true"
 # zprof
 
 # Created by `pipx` on 2026-04-17 10:25:18
-export PATH="$PATH:/Users/mhrsntrk/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Machine-local overrides (server aliases, secrets) - not tracked in git
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"

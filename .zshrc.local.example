@@ -1,0 +1,6 @@
+# ~/.zshrc.local - machine-local config, sourced at the end of ~/.zshrc.
+# Copy to ~/.zshrc.local and fill in. Never commit the real file.
+
+# Servers (tailnet hosts)
+# alias ssh_dev='ssh user@100.x.y.z'
+# alias ssh_vps='ssh -i ~/.ssh/vps user@vps'

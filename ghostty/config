@@ -1,0 +1,20 @@
+shell-integration = zsh
+
+# Font settings
+font-family = Berkeley Mono
+font-size = 16
+
+# Cursor settings
+mouse-hide-while-typing = true
+cursor-style-blink = false
+cursor-style = block
+adjust-cursor-thickness = 300%
+
+# Don't ask when closing
+confirm-close-surface = false
+
+# Always save the state of window when quitting
+window-save-state = always
+
+#Add shell integration feature
+shell-integration-features = ssh-terminfo

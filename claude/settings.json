@@ -1,0 +1,89 @@
+{
+  "attribution": {},
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$(ls -d $HOME/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh | tail -1)\""
+  },
+  "enabledPlugins": {
+    "caveman@caveman": true,
+    "security-guidance@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "andrej-karpathy-skills@karpathy-skills": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "stripe@claude-plugins-official": true,
+    "impeccable@impeccable": true,
+    "paddle@claude-community": true,
+    "tui-design@tui-design-marketplace": true,
+    "agent-gateway-skills@agent-gateway-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "karpathy-skills": {
+      "source": {
+        "source": "github",
+        "repo": "forrestchang/andrej-karpathy-skills"
+      }
+    },
+    "impeccable": {
+      "source": {
+        "source": "github",
+        "repo": "pbakaus/impeccable"
+      }
+    },
+    "claude-community": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-community"
+      }
+    },
+    "tui-design-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "gfargo/tui-design-skill"
+      }
+    },
+    "agent-gateway-skills": {
+      "source": {
+        "source": "github",
+        "repo": "choosemission/agent-gateway-skills"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark-ansi",
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "promptSuggestionEnabled": false
+}
