@@ -107,6 +107,7 @@ brew "mhrsntrk/venaqui/venaqui"
 # Casks
 # -----------------------------------------------------------------------------
 # AI
+cask "chatgpt"
 cask "claude"
 cask "claude-code@latest"
 cask "codex"
